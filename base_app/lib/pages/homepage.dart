@@ -17,8 +17,12 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Expanded(
+          SizedBox(
+            height: 200,
             child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.green, width: 3)),
               child: const Text(
                 "Home page",
                 style: TextStyle(
@@ -27,26 +31,35 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              padding: const EdgeInsets.fromLTRB(70, 80, 0, 0),
+              padding: const EdgeInsets.fromLTRB(20, 80, 0, 0),
             ),
           ),
-          Expanded(
-              child: Container(
-            width: 80,
-            height: 80,
-            //decoration: const BoxDecoration(
-            //color: Colors.red,
-            //borderRadius: BorderRadius.all(Radius.circular(10.0))
-            //)
-            color: Colors.black,
-          )),
-          Expanded(
-              child: Container(
-            width: 20,
-            height: 20,
-            //padding: const EdgeInsets.fromLTRB(100.0, 100.0, 100, 100),
-            color: Colors.red,
-          )),
+          Container(
+            width: 400,
+            padding: const EdgeInsets.fromLTRB(70, 0, 0, 0),
+            decoration: BoxDecoration(
+                border: Border.all(color: Colors.green, width: 3)),
+            child: Row(
+              children: [
+                SizedBox(
+                    child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      border: Border.all(color: Colors.green, width: 3)),
+                  width: 100,
+                  height: 100,
+                  //color: Colors.black,
+                )),
+                SizedBox(
+                    child: Container(
+                  width: 100,
+                  height: 100,
+                  alignment: const Alignment(0.5, 0.5),
+                  color: Colors.red,
+                ))
+              ],
+            ),
+          ),
         ],
       ),
       drawer: const Drawer(),
