@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'pages/homepage.dart';
+import 'package:desktop_window/desktop_window.dart';
+import 'package:window_size/window_size.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  setWindowTitle("Hyper Connect");
+  DesktopWindow.setMinWindowSize(const Size(800, 500));
+  DesktopWindow.setMaxWindowSize(const Size(800, 500));
   runApp(MyApp());
 }
 
