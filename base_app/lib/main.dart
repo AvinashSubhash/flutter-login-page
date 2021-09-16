@@ -6,8 +6,8 @@ import 'package:window_size/window_size.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   setWindowTitle("Hyper Connect");
-  DesktopWindow.setMinWindowSize(const Size(800, 500));
   DesktopWindow.setMaxWindowSize(const Size(800, 500));
+  DesktopWindow.setMinWindowSize(const Size(800, 500));
   runApp(MyApp());
 }
 

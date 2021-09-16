@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 
@@ -52,12 +52,13 @@ class HomePage extends StatelessWidget {
                     child: SizedBox(
                         child: Container(
                       decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Colors.white,
                           //border: Border.all(color: Colors.green, width: 3),
                           borderRadius:
                               const BorderRadius.all(Radius.circular(20))),
                       width: 100,
                       height: 100,
+                      child: Image.asset('assets/images/connected.png'),
                       //color: Colors.black,
                     ))),
                 Container(
