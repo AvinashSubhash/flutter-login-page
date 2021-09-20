@@ -50,15 +50,10 @@ class HomePage extends StatelessWidget {
                         borderRadius:
                             const BorderRadius.all(Radius.circular(20))),
                     child: SizedBox(
-                        child: Container(
-                      decoration: BoxDecoration(
-                          color: Colors.white,
+                        child: ClipRRect(
                           //border: Border.all(color: Colors.green, width: 3),
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(20))),
-                      width: 100,
-                      height: 100,
-                      child: Image.asset('assets/images/connected.png'),
+                        borderRadius: BorderRadius.circular(10),
+                        child:SizedBox(height:100,width:100,child:Image.asset('assets/images/connected.png',fit: BoxFit.fill,),),
                       //color: Colors.black,
                     ))),
                 Container(
@@ -81,6 +76,13 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+        FloatingActionButton(  
+        child: Icon(Icons.navigation,size: 40),  
+        backgroundColor: Colors.lightGreen,  
+        foregroundColor: Colors.white,
+        hoverColor: Colors.green,  
+        onPressed: () => {},  
+      ),
         ],
       ),
       drawer: const Drawer(),

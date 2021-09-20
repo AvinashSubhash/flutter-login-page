@@ -7,7 +7,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   setWindowTitle("Hyper Connect");
   DesktopWindow.setMaxWindowSize(const Size(800, 500));
-  DesktopWindow.setMinWindowSize(const Size(800, 500));
+  //DesktopWindow.setMinWindowSize(const Size(800, 500));
   runApp(MyApp());
 }
 
