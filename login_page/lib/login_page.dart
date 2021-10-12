@@ -50,10 +50,11 @@ final LoginButton = Padding(
     child: MaterialButton(
       minWidth: 200.0,
       height: 42.0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
       onPressed: (){
 
       },
-      color: Colors.green,
+      color: Colors.blueAccent.shade200,
       child: const Text('Log In',style: TextStyle(color: Colors.white)),
        
       ),
